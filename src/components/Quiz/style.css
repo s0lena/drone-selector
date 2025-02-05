@@ -1,0 +1,342 @@
+/* Test questions container */
+.test-questions {
+  font-family: "Roobert";
+  background-color: #7622d7;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Swiper container */
+.swiper {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background-color: #f1e9fb;
+}
+
+/* Swiper slide */
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #7622d7;
+  padding: 20px;
+}
+
+/* Slide header */
+.swiper-slide h3 {
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 42px;
+  line-height: 48px;
+  text-align: center;
+  max-width: 1088px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+/* Answer section */
+.swiper-slide .answer-section {
+  background-color: #f1e9fb;
+  height: 450px;
+  width: 1088px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px;
+  padding-bottom: 80px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.answer-section .input {
+  display: flex;
+  align-items: center;
+  min-height: 47px;
+}
+
+.answer-section label {
+  font-size: 20px;
+  margin-left: 10px;
+  max-width: 900px;
+  line-height: 1.5;
+}
+
+/* Input styling */
+.swiper-slide input[type="radio"] {
+  accent-color: #7622d7;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+  max-width: 30px;
+  cursor: pointer;
+}
+
+/* Checked input styling */
+.swiper-slide input:checked {
+  border: 6px solid black;
+}
+
+/* Next button */
+.swiper-button-next {
+  width: 150px;
+  height: 52px;
+  border: 3px solid black;
+  border-radius: 32px;
+  background-color: #f1e9fb;
+  font-size: 16px;
+  font-weight: bold;
+  color: #7622d7;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Progress bar */
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #cafad9;
+}
+
+/* Fieldset reset */
+.swiper fieldset {
+  border: none;
+}
+
+/* Test results section */
+.test-results-section {
+  font-family: "Roobert";
+  background-color: #7622d7;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Test results text */
+.test-results-section-text {
+  background-color: #f1e9fb;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 1088px;
+  height: 450px;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Results header */
+.test-results-section-text h4 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* Transparent button */
+.button-transparent {
+  padding: 10px 30px;
+  height: 52px;
+  border: 3px solid black;
+  border-radius: 32px;
+  background-color: #f1e9fb;
+  font-size: 16px;
+  font-weight: bold;
+  bottom: 164px;
+  cursor: pointer;
+  color: #7622d7;
+  text-decoration: none;
+  position: absolute;
+  bottom: 76px;
+}
+
+.button-transparent:disabled {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.swiper-no-swiping {
+  cursor: default;
+}
+
+@media (max-width: 360px) {
+  /* Swiper container */
+  .swiper {
+    width: 100%;
+  }
+
+  /* Swiper slide */
+  .swiper-slide {
+    padding: 10px;
+  }
+
+  /* Slide header */
+  .swiper-slide h3 {
+    font-family: "Roobert";
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 28.8px;
+    letter-spacing: -0.20000000298023224px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  /* Answer section */
+  .swiper-slide .answer-section {
+    width: 90vw;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .answer-section label {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.8px;
+    max-width: 90%;
+    margin-top: 10px;
+  }
+
+  /* Input styling */
+  .swiper-slide input[type="radio"] {
+    accent-color: #7622d7;
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+    max-width: 30px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  /* Next button */
+  .swiper-button-next {
+    width: 120px;
+    height: 44px;
+    font-size: 14px;
+    bottom: 10px;
+  }
+
+  /* Test results section */
+  .test-results-section {
+    padding: 20px;
+    height: 90vh;
+  }
+
+  /* Test results text */
+  .test-results-section-text {
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  /* Results header */
+  .test-results-section-text h4 {
+    font-size: 24px;
+  }
+
+  /* Transparent button */
+  .button-transparent {
+    padding: 8px 20px;
+    height: 44px;
+    font-size: 14px;
+    bottom: 20px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 860px) {
+  /* Swiper container */
+  .swiper {
+    width: 100%;
+  }
+
+  /* Swiper slide */
+  .swiper-slide {
+    padding: 10px;
+  }
+
+  /* Slide header */
+  .swiper-slide h3 {
+    font-family: "Roobert";
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 28.8px;
+    letter-spacing: -0.20000000298023224px;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  /* Answer section */
+  .swiper-slide .answer-section {
+    width: 90vw;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .answer-section label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    max-width: 90%;
+    margin-top: 10px;
+  }
+
+  /* Input styling */
+  .swiper-slide input[type="radio"] {
+    accent-color: #7622d7;
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+    max-width: 30px;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  /* Next button */
+  .swiper-button-next {
+    width: 120px;
+    height: 44px;
+    font-size: 14px;
+    bottom: 10px;
+  }
+
+  /* Test results section */
+  .test-results-section {
+    padding: 20px;
+    height: 90vh;
+  }
+
+  /* Test results text */
+  .test-results-section-text {
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  /* Results header */
+  .test-results-section-text h4 {
+    font-size: 24px;
+  }
+
+  /* Transparent button */
+  .button-transparent {
+    padding: 8px 20px;
+    height: 44px;
+    font-size: 14px;
+    bottom: 20px;
+  }
+}
